@@ -1,0 +1,61 @@
+@media only screen and {
+    
+}
+
+h1.destacado{
+    color: rgba(209, 209, 108, 0.815);
+    font-size: 220%;
+}
+
+header{
+    background-color: rgb(25, 6, 75);
+}
+
+a{
+    color: beige;
+
+}
+a:hover{
+    color:orange;
+}
+.unico{
+    color: blueviolet;
+}
+
+h1{
+    color: brown;
+}
+
+p{
+    color:blue;
+}
+
+.contenedor{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    background-color: rgb(7, 7, 53);
+    align-items: center;
+    
+
+}
+
+.imagen{
+    width: 80%;
+    height: 80%;
+    
+    }
+
+.elemento{
+    
+    width: 40%;
+    height: 80%;
+    background-color: bisque;
+    border-radius: 40px;
+   
+    
+    
+}
+
+
+
