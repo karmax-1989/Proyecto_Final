@@ -42,9 +42,48 @@
         chart.draw(data, options);
       }
     </script>
+    <style>
+        table{
+            width: 50%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th,td{
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+        th{
+            background-color: #ccc;
+        }
+    </style>
   </head>
 
   <body>
+
+    <h1>Tabla de Energía</h1>
+    <table id="tablaUsuarios">
+    <thead>
+        <tr>
+            <th>Entity</th>
+            <th>Code</th>
+            <th>Year</th>
+            <th>Geo Biomass Other - TWh</th>
+            <th>Solar Generation - TWh</th>
+            <th>Wind Generation - TWh</th>
+            <th>Hydro Generation - TWh</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!--Aca van las filas de la tabla-->
+
+
+    </tbody>
+    </table>
+    <script src="./script.js"></script>
+
+
+
     <!--Div that will hold the pie chart-->
     <div id="chart_div"></div>
   </body>
