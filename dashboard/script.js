@@ -1,3 +1,8 @@
+
+
+
+
+
 async function cargarCSV() {
 
 
@@ -28,3 +33,4 @@ async function cargarCSV() {
     )
 }
 cargarCSV();
+
