@@ -6,7 +6,8 @@ async function cargarCSV() {
     const texto = await respuesta.text();
     const lineas = texto.trim().split("\n");
     const encabezados = lineas[0].split(",");
-    const datos = lineas.slice(1039);
+    const datos = lineas.slice(1039, 1095);
+
 
     const tbody = document.querySelector("#tablaUsuarios tbody");
 
