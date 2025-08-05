@@ -3,8 +3,17 @@
 }
 
 h1.destacado{
-    color: rgba(209, 209, 108, 0.815);
+    color: rgba(0, 0, 0, 0.815);
     font-size: 220%;
+    text-align: center;
+    padding: 1rem;
+}
+
+.subtitulos{
+    color: rgba(0, 0, 0, 0.815);
+    font-size: 150%;
+    text-align: center;
+    padding: 1rem;
 }
 
 a{
@@ -24,6 +33,10 @@ h1{
 
 p{
     color:blue;
+    font-size: 120%;
+    text-align: center;
+    padding: 1rem;
+    text-align: justify;
 }
 
 .contenedor{
@@ -37,21 +50,17 @@ p{
 }
 
 .imagen{
-    width: 80%;
-    height: 80%;
-    
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     }
 
-.elemento{
-    
-    width: 40%;
-    height: 80%;
-    background-color: bisque;
-    border-radius: 40px;
-   
-    
-    
-}
+.imagenes{
+    display: flex;
+    justify-content: center;
+    }
 
 
 
