@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
@@ -8,8 +8,8 @@
   <link rel="stylesheet" href="./estilo.css">
 
   <!--Load the AJAX API-->
-  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-  <script type="text/javascript" src="./Torta.js"></script>
+  <!-- <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> -->
+ 
 
   <!-- <script type="text/javascript">
 
@@ -56,10 +56,10 @@
 </head>
 
 <body>
-  <!--Div that will hold the pie chart-->
+  <!--Div que contendrá la tabla y los gráficos-->
   <div id="contenedor">
 
-
+<!-- Div que contendrá a la Tabla -->
     <div id="tableau">
       <h1>Tabla de Energía</h1>
       <table id="tablaUsuarios">
@@ -81,18 +81,47 @@
         </tbody>
       </table>
     </div>
-
-    <div id="grafico_torta">
+<!-- Divs que contedrá a los gráficos -->
+    <div class="grafico_torta">
       <h1>Grafico de Torta</h1>
+      <canvas id="myChart"></canvas>
+    </div>
+
+    <div class="grafico_torta2">
+      <h1>Grafico de Torta 2</h1>
       <div id="chart_div">
       </div>
 
-
+    <div class="estandar_tamano">
+      <h1>Grafico de Area</h1>
+      <canvas id="myChart2"></canvas>
     </div>
+
+    <div class="estandar_tamano">
+      <h1>Grafico de Barras</h1>
+      <canvas id="myChart3"></canvas>
+    </div>
+
+    <div class="estandar_tamano">
+      <h1>Grafico de Linea</h1>
+      <canvas id="myChart4"></canvas>
+    </div>
+
   </div>
+
+  <!-- Llamados de Js -->
   <script src="./script.js"></script>
-
-
+  <!-- Llamado de js de gráficos -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.6/dist/chart.umd.min.js"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> 
+ <!-- Grafico de torta -->
+  <script type="text/javascript" src="./js_graficos/Torta.js"></script>
+  <!-- Grafico de Area -->
+  <script type="text/javascript" src="./js_graficos/Area.js"></script>
+  <!-- Grafico de Barras -->
+  <script type="text/javascript" src="./js_graficos/Barra.js"></script>
+  <!-- Grafico de Lineas -->
+  <script type="text/javascript" src="./js_graficos/Linea.js"></script>
 
 
 </body>

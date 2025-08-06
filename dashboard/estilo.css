@@ -75,18 +75,37 @@ h1 {
 #chart_div {
     width: 100%;
 }
+
 #contenedor {
-     display: flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #f0fff0;
     padding: 20px;
 }
-#grafico_torta {
-    width: 60%;
+/* #grafico_torta {
+    width: 50%;
+    margin-top: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+} */
+
+#estandar_tamano {
+    width: 50%;
     margin-top: 20px;
     background-color: white;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+/* canvas {
+    width: 50%;
+    margin-top: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+} */
