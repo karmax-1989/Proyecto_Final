@@ -27,12 +27,21 @@
 body {
     font-family: sans-serif;
     background-color: #f0fff0; /* Verde claro para el fondo */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para la tabla
+*/
+#tableau {
+    width: 90%;/* Ancho de la tabla para que no toque los bordes de la página */
+    margin: 20px auto;/* Centra la tabla y le da un espacio */
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
-    margin: 20px 0;
+    /* margin: 20px 0; */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 th,
@@ -72,17 +81,31 @@ h1 {
     text-align: center;
 }
 
-#chart_div {
+/* #chart_div {
     width: 100%;
-}
+} */
 
-#contenedor {
+/* #contenedor {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #f0fff0;
     padding: 20px;
+} */
+
+/*
+    Estilos para el contenedor principal de gráficos
+*/
+#contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual ancho */
+    gap: 20px; /* Espacio entre los gráficos */
+    padding: 20px;
+    margin: 0 auto; /* Centra el contenedor de gráficos */
+    max-width: 90%; /* Limita el ancho del contenedor de gráficos */
+    background-color: #f0fff0;
 }
+
 /* #grafico_torta {
     width: 50%;
     margin-top: 20px;
@@ -92,14 +115,14 @@ h1 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 } */
 
-#estandar_tamano {
+/* #estandar_tamano {
     width: 50%;
     margin-top: 20px;
     background-color: white;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+} */
 
 /* canvas {
     width: 50%;
@@ -109,3 +132,30 @@ h1 {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 } */
+
+/*
+    Estilos para cada contenedor de gráfico
+*/
+.grafico_torta,
+.estandar_tamano {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    box-sizing: border-box; /* Asegura que el padding se incluya en el ancho total */
+}
+
+/* Ajustes para los canvas y los divs de Google Charts
+*/
+canvas,
+#chart_div {
+    width: 100% !important; /* Importante para que los gráficos se adapten al contenedor */
+    height: auto !important;
+}
+
+@media (max-width: 768px) {
+    #contenedor {
+        grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
+    }
+}
