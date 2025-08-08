@@ -44,6 +44,9 @@ h1{
     color: #4caf50;
     text-align: center;
 }
+h2{
+    line-height: 1.2;
+}
 
 p{
     /* color:rgb(255, 255, 255);
@@ -109,6 +112,28 @@ a:hover{
     transition: transform 0.3s ease-in-out;
 }
 
+#Home{
+    margin-top: -22%;
+    background-color: white;
+    
+}
+#Revolution{
+    
+}
+#Innovation{
+    background-color: white;
+}
+#Ventajas{
+
+}
+#Futuro{
+    background-color: white;
+
+}
+.inverter{
+    color: black;
+}
+
 .imagenes img:hover {
     transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
 }
@@ -123,7 +148,7 @@ footer {
     margin-top: 4rem;
 }
 
-footer h1 {
+#contacto h1 {
     color: #4caf50;
     margin-bottom: 1rem;
 }
