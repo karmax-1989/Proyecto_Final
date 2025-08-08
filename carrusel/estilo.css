@@ -37,17 +37,23 @@ body {
     position: relative;
 }
 .texto {
-    position: absolute;
-    text-align: center;
-    padding: 0 250px;
+    font-size: 1.5rem;
+    position:absolute;
+    margin-top: 8%;
+    left:5%;
+    right:5%;
+    text-align:justify;    
     top: 250px;
-    color: white;
+    color: rgb(254, 255, 255);
+    background: linear-gradient(rgb(39, 156, 93),rgb(13, 10, 10));
+    opacity: 80%;
     
+    
+        
 }
-.texto h2 {
-    font-size: 45px;
-    margin-bottom: 35px;
-}
+
+
+
 
 .slider-box img {
     width: 100%;
@@ -80,13 +86,16 @@ body {
     .slider-box {
         width: 100%;
     }
-    .text{
+    .texto{
         top: 50px;
         padding: 25px;
     }
 
-    .text h2 {
+    .texto h2 {
         font-size: 35px;
         margin-bottom: 15px;
+    }
+    .texto p {
+        font-size: 25px;
     }
 }
