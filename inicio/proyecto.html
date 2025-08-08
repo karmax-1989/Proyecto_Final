@@ -5,10 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Energía Solar</title>
-    <link rel="stylesheet" href="./estilo.css">
+
     <link rel="stylesheet" href="../navbar/styles.css">
-    
+    <link rel="stylesheet" href="./estilo.css">
+    <link rel="stylesheet" href="../carrusel/carrusel.css">
+
 </head>
+
 <body>
     <div class="header">
         <div class="logo">
@@ -23,17 +26,78 @@
                 <li><a href="../calculadora/index.html">Calculadora</a></li>
             </ul>
         </nav>
-        
+
     </div>
-    
+
 
     <header>
-        <h1 class="destacado">Energía Solar con Cerebro Digital:</h1> 
-        <h1 class="subtitulos">La Revolución de los Paneles Inteligentes</h1>
+        <h2 class="titulo">ENERGÍA SOLAR CON CEREBRO DIGITAL <br> (La revolución de los Páneles Inteligentes)</h2>
     </header>
     <main>
+
+
+        <div class="slider-box" alt="">
+            <ul>
+                <li>
+                    <img src="./img/inicio.jpg" alt="">
+                    <div class="texto">
+                        <p1>
+                            En un mundo donde el cambio climático y el agotamiento de los recursos naturales son una
+                            realidad, adoptar energías alternativas se ha vuelto una necesidad urgente. Entre estas, los
+                            paneles solares gestionados con inteligencia artificial (IA) destacan como una solución
+                            innovadora y eficiente.
+                            </p>
+
+                    </div>
+
+                </li>
+                <li>
+                    <img src="./img/85.JPG" alt="">
+                    <div class="texto">
+                        <p1>
+                            La integración de la IA permite maximizar la eficiencia, reducir costos y minimizar el
+                            desperdicio, haciendo que la energía solar sea aún más accesible y sostenible.
+                            </p>
+
+                    </div>
+
+                </li>
+                <li>
+                    <img src="./img/86.JPG" alt="">
+                    <div class="texto">
+                        <p1>
+                            Adoptar estas tecnologías no solo beneficia al medio ambiente, sino que también impulsa el
+                            desarrollo económico y mejora la calidad de vida.
+                            </p>
+
+                    </div>
+                </li>
+                <li>
+                    <img src="./img/94.jpeg" alt="">
+                    <div class="texto">
+                        <p1>
+                            Es momento de actuar: invertir en energías renovables inteligentes es invertir en un futuro
+                            más verde y responsable para las próximas generaciones.
+                            </p>
+
+                    </div>
+                </li>
+                <li>
+                    <img src="./img/final.jpg" alt="">
+                    <div class="texto">
+                        <p1>
+                            ¡El sol es una fuente inagotable de energía; usémosla con inteligencia!🌞⚡
+                            </p>
+
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+
         <section id="Home">
-            <p>
+
+            <p class="inverter">
                 La energía solar ha experimentado avances significativos con la implementación de paneles de última
                 generación, como los de perovskita, que ofrecen mayor eficiencia y menor costo en comparación con los
                 paneles tradicionales de silicio. Además, las innovaciones en paneles bifaciales permiten capturar luz
@@ -66,7 +130,7 @@
         <section id="Innovation">
             <!--Tercera sección-->
             <h1 class="subtitulos">Innovación</h1>
-            <p>
+            <p class="inverter">
                 Otra innovación clave es el uso de IA generativa para diseñar nuevos materiales fotovoltaicos,
                 acelerando el descubrimiento de células solares más eficientes que podrían superar el 30% de
                 rendimiento. Startups como Heliogen emplean visión por computadora y robótica para crear plantas solares
@@ -99,7 +163,7 @@
         <section id="Futuro">
             <!--Quinta sección-->
             <h1 class="subtitulos">Energía Solar: Un camino hacia el Futuro</h1>
-            <p>
+            <p class="inverter">
                 El futuro de la energía solar apunta hacia una integración total con tecnologías disruptivas, como
                 paneles solares transparentes en ventanas y fachadas, o incluso pinturas fotovoltaicas que convierten
                 cualquier superficie en generadores de energía. La combinación con inteligencia artificial y redes de
@@ -110,27 +174,33 @@
                 reemplazará a los combustibles fósiles, sino que redefinirá por completo cómo consumimos y distribuimos
                 la electricidad en el siglo XXI.
             </p>
-            <div class="imagenes">    
+            <div class="imagenes">
                 <img src="./img/55.JPG" alt="Futuro Civilización">
             </div>
-        </section>           
+        </section>
+
+        <section id="contacto">
+            <h1 class="subtitulos">Contáctanos</h1>
+            <form>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo Electrónico</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
     </main>
     <footer>
-        <h1>Contáctanos</h1>
-        <form>
-            <label for="nombre">Nombre</label>
-            <input type="text" id="nombre" name="nombre" required>
-            
-            <label for="email">Correo Electrónico</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="mensaje">Mensaje</label>
-            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-            
-            <button type="submit">Enviar</button>
-        </form>
+
+
     </footer>
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
