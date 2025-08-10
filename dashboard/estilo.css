@@ -79,6 +79,7 @@ tbody tr:hover {
 h1 {
     color: #388e3c; /* Título en verde */
     text-align: center;
+    font-size: 2rem;
 }
 
 /* #chart_div {
