@@ -1,0 +1,48 @@
+.pie{
+    box-sizing: border-box;
+    background-color: #000000;
+}
+
+.header-footer{
+    background-color: #4caf50;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+    padding: 5px 10%;
+}
+
+.header-footer .logo-footer img{
+    height: 55px;
+    width: auto;
+    margin-top: 9px;
+    transition: all 0.3s;
+    border-radius: 100%;
+
+}
+
+.header-footer .logo-footer{
+    cursor: pointer;
+    
+}
+
+.header-footer .logo-footer img:hover{
+    transform: scale(1.1);
+}
+
+.yt{
+    background-color: #9e0000;
+    border-radius: 50px;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    
+}
+
+.derechos{
+    background-color: #012202;
+}
+
+.header-footer{
+    display: flex;
+    justify-content: space-between;
+}
