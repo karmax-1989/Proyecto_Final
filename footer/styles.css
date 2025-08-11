@@ -3,6 +3,11 @@
     background-color: #000000;
 }
 
+.logo-footer{
+    display: flex;
+    align-items: center;
+}
+
 .header-footer{
     background-color: #4caf50;
     display: flex;
@@ -45,4 +50,38 @@
 .header-footer{
     display: flex;
     justify-content: space-between;
+}
+
+.derechos{
+    display: flex !important;
+    justify-content: space-around !important;
+
+}
+
+.karmaxcode-footer{
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.karmaxcode-footer img{
+    width: 85px;
+    height: 57px;
+    
+}
+
+#text-footer{
+    margin: 0;
+    padding-top: 6px;
+    padding-right: 10px;
+}
+
+.section-footer{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 40px;
+}
+
+.section-footer div{
+    display: flex;
 }
