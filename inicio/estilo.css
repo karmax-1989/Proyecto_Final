@@ -153,6 +153,9 @@ a:hover{
     color: #4caf50;
     margin-bottom: 0.8rem;
 }
+.footer_text{
+    font-size: 0.7rem;
+}
 
 form {
     display: flex;
