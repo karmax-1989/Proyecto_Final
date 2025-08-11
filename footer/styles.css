@@ -14,7 +14,7 @@
     justify-content: space-between;
     align-items: center;
     height: 65px;
-    padding: 5px 10%;
+    padding: 15px;
 }
 
 .header-footer .logo-footer img{
@@ -50,6 +50,8 @@
 .header-footer{
     display: flex;
     justify-content: space-between;
+    padding: 15px;
+    
 }
 
 .derechos{
@@ -61,27 +63,41 @@
 .karmaxcode-footer{
     display: flex;
     justify-content: flex-end;
+    padding-bottom: 20px;
 
 }
 
 .karmaxcode-footer img{
-    width: 85px;
-    height: 57px;
+    width: 90px;
+    height: 60px;
+    
     
 }
 
 #text-footer{
     margin: 0;
-    padding-top: 6px;
+    padding-top: 7px;
     padding-right: 10px;
+    
 }
 
 .section-footer{
     display: flex;
     justify-content: space-evenly;
     gap: 40px;
+    padding: 15px;
 }
 
 .section-footer div{
     display: flex;
+    flex-direction: column;
+}
+
+.karmaxcode-footer img{
+    padding-right: 15px;
+}
+
+.estructura-footer{
+    margin: 0 !important;
+    padding: 0 !important;
 }
