@@ -16,9 +16,20 @@ iframe {
 
 h2.video {
     color: #0e0e0e; /* Color principal */
-    font-size: 3rem; /* Tamaño de fuente más grande */
+    font-size: 3rem;  /*Tamaño de fuente más grande*/ 
     text-align: center;
     padding: 2rem 1rem 0;
     font-weight: bold;
     background-color: rgb(6, 180, 73);
 }
+ /* text-align: center;
+    font-size: 40px;
+    padding-top: 20px;
+    
+    background-color: rgb(9, 10, 10);
+    color: aliceblue;
+    
+    font-size: 3rem;  Tamaño de fuente más grande 
+    text-align: center;
+    padding: 2rem 1rem 0;
+    */

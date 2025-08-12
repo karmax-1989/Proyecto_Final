@@ -33,7 +33,7 @@ h1.destacado{
     text-align: center;
     padding: 1rem; */
      color: #4caf50; /* Color principal */
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
     padding: 1rem;
     font-weight: 600;
@@ -55,7 +55,7 @@ p{
     padding: 1rem;
     text-align: justify; */
     color: #e0e0e0;
-    font-size: 1rem;
+    font-size: 0.8rem;
     text-align: justify;
     padding: 0 0%; /* Padding lateral para que no toque los bordes */
     max-width: 1000px;
