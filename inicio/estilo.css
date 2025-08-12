@@ -142,7 +142,9 @@ a:hover{
 /* Estilos para el pie de página (footer) y la sección de "Contáctanos"
 */
 #contacto {
-    background-color: #1f1f1f;
+    background-image: url(img/57.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 1rem;
     text-align: center;
     border-top: 2px solid #4caf50;

@@ -1,5 +1,9 @@
 body{
-    background-color: #121212; /* Fondo oscuro */
+    background-image: url(../inicio/img/91.JPG);
+     
+    background-repeat: no-repeat;
+    background-size: cover;
+    
     color: #e0e0e0; /* Color de texto general claro */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente legible */
     margin: 0;
@@ -14,7 +18,8 @@ body{
     }
     
     #formulario{
-    
+       background-color: black;
+       opacity: 70%;
         width: 70%;
         text-align: center;
         margin-top: 10% !important;
