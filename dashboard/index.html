@@ -7,50 +7,53 @@
   <title>Dashboard</title>
   <link rel="stylesheet" href="./estilo.css">
   <link rel="stylesheet" href="../navbar/styles.css">
-  
+
 </head>
 
 <body>
-  <div class="header">
-        <div class="logo">
-            <a href="../inicio/proyecto.html">
-                <img src="../navbar/img/logo.jpg" alt="Logo">
-            </a>
-        </div>
-        <nav>
-            <ul class="nav-links">
-              <li><a href="../inicio/proyecto.html">Inicio</a></li>
-              <li><a href="../dashboard/index.html">Dashboard</a></li>
-              <li><a href="../calculadora/index.html">Calculadora</a></li>
-            </ul>
-        </nav>
-        
+  <header>
+    <div class="navigator">
+      <div class="logo">
+        <a href="../inicio/proyecto.html">
+          <img src="../navbar/img/logo.jpg" alt="Logo">
+        </a>
       </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="../inicio/proyecto.html">Inicio</a></li>
+          <li><a href="../dashboard/index.html">Dashboard</a></li>
+          <li><a href="../calculadora/index.html">Calculadora</a></li>
+        </ul>
+      </nav>
+
+    </div>   
+
+  </header>
 
   <!-- Div que contendrá a la Tabla -->
-    <div id="tableau">
-      <h1>Tabla de Energía</h1>
-      <table id="tablaUsuarios">
-        <thead>
-          <tr>
-            <th>Entity</th>
-            <th>Code</th>
-            <th>Year</th>
-            <th>Geo Biomass Other - TWh</th>
-            <th>Solar Generation - TWh</th>
-            <th>Wind Generation - TWh</th>
-            <th>Hydro Generation - TWh</th>
-          </tr>
-        </thead>
-        <tbody>
-          <!--Aca van las filas de la tabla-->
+  <div id="tableau">
+    <h1>Tabla de Energía</h1>
+    <table id="tablaUsuarios">
+      <thead>
+        <tr>
+          <th>Entity</th>
+          <th>Code</th>
+          <th>Year</th>
+          <th>Geo Biomass Other - TWh</th>
+          <th>Solar Generation - TWh</th>
+          <th>Wind Generation - TWh</th>
+          <th>Hydro Generation - TWh</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!--Aca van las filas de la tabla-->
 
 
-        </tbody>
-      </table>
-    </div>
+      </tbody>
+    </table>
+  </div>
 
-      <!--Div que contendrá la tabla y los gráficos-->
+  <!--Div que contendrá la tabla y los gráficos-->
   <div id="contenedor">
 
 
@@ -89,8 +92,8 @@
   <script src="./script.js"></script>
   <!-- Llamado de js de gráficos -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.6/dist/chart.umd.min.js"></script>
-  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> 
- <!-- Grafico de torta -->
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <!-- Grafico de torta -->
   <script type="text/javascript" src="./js_graficos/Torta.js"></script>
   <!-- Grafico de Area -->
   <script type="text/javascript" src="./js_graficos/Area.js"></script>
@@ -101,4 +104,5 @@
 
 
 </body>
+
 </html>
