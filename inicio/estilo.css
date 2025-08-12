@@ -33,7 +33,7 @@ h1.destacado{
     text-align: center;
     padding: 1rem; */
      color: #4caf50; /* Color principal */
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
     padding: 1rem;
     font-weight: 600;
@@ -55,7 +55,7 @@ p{
     padding: 1rem;
     text-align: justify; */
     color: #e0e0e0;
-    font-size: 1rem;
+    font-size: 0.8rem;
     text-align: justify;
     padding: 0 0%; /* Padding lateral para que no toque los bordes */
     max-width: 1000px;
@@ -142,7 +142,9 @@ a:hover{
 /* Estilos para el pie de página (footer) y la sección de "Contáctanos"
 */
 #contacto {
-    background-color: #1f1f1f;
+    background-image: url(img/57.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 1rem;
     text-align: center;
     border-top: 2px solid #4caf50;
@@ -152,6 +154,9 @@ a:hover{
 #contacto h1 {
     color: #4caf50;
     margin-bottom: 0.8rem;
+}
+.footer_text{
+    font-size: 0.7rem;
 }
 
 form {
