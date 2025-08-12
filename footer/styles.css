@@ -70,6 +70,7 @@
 .karmaxcode-footer img{
     width: 90px;
     height: 60px;
+    padding-right: 15px;
     
     
 }
@@ -93,11 +94,21 @@
     flex-direction: column;
 }
 
-.karmaxcode-footer img{
-    padding-right: 15px;
+.enlaces-footer{
+    padding: 0 !important;
+    margin: 0;
 }
 
-.estructura-footer{
-    margin: 0 !important;
-    padding: 0 !important;
+#input-suscribete{
+    width: 100%;
+}
+
+#copyright{
+    color: #e0e0e0;
+    font-size: 0.6rem;
+    text-align: justify;
+    padding: 0 0%; /* Padding lateral para que no toque los bordes */
+    max-width: 1000px;
+    margin: 0 auto;
+    line-height:40px;
 }
