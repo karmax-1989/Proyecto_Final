@@ -99,8 +99,8 @@
     margin: 0;
 }
 
-#input-suscribete{
-    width: 100%;
+.input-suscribete{
+    width: 100% !important;
 }
 
 #copyright{
@@ -111,4 +111,8 @@
     max-width: 1000px;
     margin: 0 auto;
     line-height:40px;
+}
+
+#definition-footer{
+    text-align: justify;
 }
