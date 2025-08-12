@@ -57,6 +57,7 @@
 </head>
 
 <body>
+
   <div class="header">
         <div class="logo">
             <a href="../inicio/proyecto.html">
@@ -72,6 +73,9 @@
         </nav>
         
       </div>
+
+  <!--Div que contendrá la tabla y los gráficos-->
+  <div id="contenedor">
 
   <!-- Div que contendrá a la Tabla -->
     <div id="tableau">
@@ -111,21 +115,30 @@
 
     <!-- <div class="grafico_torta2">
       <h1>Grafico de Torta 2</h1>
+
+<!-- Divs que contedrá a los gráficos -->
+    <div class="grafico_torta">
+      <h1>Grafico de Torta</h1>
+      <canvas id="myChart"></canvas>
+    </div>
+
+    <div class="grafico_torta2">
+      <h1>Grafico de Torta 2</h1>
       <div id="chart_div">
-      </div> -->
+      </div>
 
     <div class="estandar_tamano">
-      <h1>Gráfico de Área</h1>
+      <h1>Grafico de Area</h1>
       <canvas id="myChart2"></canvas>
     </div>
 
     <div class="estandar_tamano">
-      <h1>Gráfico de Barras</h1>
+      <h1>Grafico de Barras</h1>
       <canvas id="myChart3"></canvas>
     </div>
 
     <div class="estandar_tamano">
-      <h1>Gráfico de Línea</h1>
+      <h1>Grafico de Linea</h1>
       <canvas id="myChart4"></canvas>
     </div>
 
@@ -147,4 +160,148 @@
 
 
 </body>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../navbar/styles.css">
+
+  <!--Load the AJAX API-->
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+  <script type="text/javascript">
+
+
+    // Load the Visualization API and the corechart package.
+    google.charts.load('current', { 'packages': ['corechart'] });
+
+    // Set a callback to run when the Google Visualization API is loaded.
+    google.charts.setOnLoadCallback(drawChart);
+
+    // Callback that creates and populates a data table,
+    // instantiates the pie chart, passes in the data and
+    // draws it.
+
+
+    function drawChart() {
+
+      // Create the data table.
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Topping');
+      data.addColumn('number', 'Slices');
+      data.addRows([
+        ['Piña', 7],
+        ['Onions', 1],
+        ['Olives', 1],
+        ['Zucchini', 1],
+        ['Pepperoni', 2]
+      ]);
+
+      // Set chart options
+      var options = {
+        'title': 'How Much Pizza I Ate Last Night',
+        'width': 400,
+        'height': 300
+      };
+
+      // Instantiate and draw our chart, passing in some options.
+
+      var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+      chart.draw(data, options);
+    }
+  </script>
+
+</head>
+
+<body>
+  <!--Div that will hold the pie chart-->
+  <div id="contenedor">
+
+  <body>
+
+    <div class="header">
+        <div class="logo">
+            <a href="../inicio/proyecto.html">
+                <img src="../navbar/img/logo.jpg" alt="Logo">
+            </a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+              <li><a href="../inicio/proyecto.html">Inicio</a></li>
+              <li><a href="../dashboard/index.html">Dashboard</a></li>
+              <li><a href="../calculadora/index.html">Calculadora</a></li>
+            </ul>
+        </nav>
+        
+      </div>
+
+    <div id="tableau">
+      <h1>Tabla de Energía</h1>
+      <table id="tablaUsuarios">
+        <thead>
+          <tr>
+            <th>Entity</th>
+            <th>Code</th>
+            <th>Year</th>
+            <th>Geo Biomass Other - TWh</th>
+            <th>Solar Generation - TWh</th>
+            <th>Wind Generation - TWh</th>
+            <th>Hydro Generation - TWh</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!--Aca van las filas de la tabla-->
+
+
+        </tbody>
+      </table>
+    </div>
+
+    <div id="grafico_torta">
+      <h1>Grafico de Torta</h1>
+
+      <div id="chart_div">
+      </div> -->
+
+
+    <div class="estandar_tamano">
+      <h1>Gráfico de Área</h1>
+      <canvas id="myChart2"></canvas>
+    </div>
+
+    <div class="estandar_tamano">
+      <h1>Gráfico de Barras</h1>
+      <canvas id="myChart3"></canvas>
+    </div>
+
+    <div class="estandar_tamano">
+      <h1>Gráfico de Línea</h1>
+      <canvas id="myChart4"></canvas>
+    </div>
+
+
+    </div>
+
+  </div>
+  <script src="./script.js"></script>
+    </tbody>
+    </table>
+    
+
+
+
+</body>
+
+
+    <!--Div that will hold the pie chart-->
+    <div id="chart_div"></div>
+    <script src="./script.js"></script>
+  </body>
+
+
 </html>
