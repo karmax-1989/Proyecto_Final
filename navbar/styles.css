@@ -2,23 +2,25 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-size: 20px;
+    font-size:2vw;
 
 }
 
 
 .header{
-    background-color: rgb(0, 0, 126);
+    background-color: #4caf50;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 85px;
+    height: 65px;
     padding: 5px 10%;
 }
 
+
 .header .logo img{
-    height: 70px;
+    height: 55px;
     width: auto;
+    margin-top: 9px;
     transition: all 0.3s;
     border-radius: 100%;
 
@@ -30,7 +32,7 @@
 }
 
 .header .logo img:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .header .nav-links{

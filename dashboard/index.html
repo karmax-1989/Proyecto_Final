@@ -1,12 +1,12 @@
-<<<<<<<<< Temporary merge branch 1
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../navbar/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="./estilo.css">
+  <link rel="stylesheet" href="../navbar/styles.css">
 
   <!--Load the AJAX API-->
   <!-- <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> -->
@@ -57,10 +57,27 @@
 </head>
 
 <body>
+
+  <div class="header">
+        <div class="logo">
+            <a href="../inicio/proyecto.html">
+                <img src="../navbar/img/logo.jpg" alt="Logo">
+            </a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+              <li><a href="../inicio/proyecto.html">Inicio</a></li>
+              <li><a href="../dashboard/index.html">Dashboard</a></li>
+              <li><a href="../calculadora/index.html">Calculadora</a></li>
+            </ul>
+        </nav>
+        
+      </div>
+
   <!--Div que contendrá la tabla y los gráficos-->
   <div id="contenedor">
 
-
+  <!-- Div que contendrá a la Tabla -->
     <div id="tableau">
       <h1>Tabla de Energía</h1>
       <table id="tablaUsuarios">
@@ -82,6 +99,23 @@
         </tbody>
       </table>
     </div>
+
+      <!--Div que contendrá la tabla y los gráficos-->
+  <div id="contenedor">
+
+
+
+    <!-- Divs que contedrá a los gráficos -->
+    <div class="grafico_torta">
+      <h1>Gráfico de Torta</h1>
+      <div id="chart_div">
+      </div>
+      <canvas id="myChart"></canvas>
+    </div>
+
+    <!-- <div class="grafico_torta2">
+      <h1>Grafico de Torta 2</h1>
+
 <!-- Divs que contedrá a los gráficos -->
     <div class="grafico_torta">
       <h1>Grafico de Torta</h1>
@@ -127,7 +161,7 @@
 
 </body>
 
-=========
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -230,11 +264,29 @@
 
     <div id="grafico_torta">
       <h1>Grafico de Torta</h1>
+
       <div id="chart_div">
-      </div>
+      </div> -->
+
+
+    <div class="estandar_tamano">
+      <h1>Gráfico de Área</h1>
+      <canvas id="myChart2"></canvas>
+    </div>
+
+    <div class="estandar_tamano">
+      <h1>Gráfico de Barras</h1>
+      <canvas id="myChart3"></canvas>
+    </div>
+
+    <div class="estandar_tamano">
+      <h1>Gráfico de Línea</h1>
+      <canvas id="myChart4"></canvas>
+    </div>
 
 
     </div>
+
   </div>
   <script src="./script.js"></script>
     </tbody>
@@ -243,10 +295,13 @@
 
 
 
+</body>
+
+
     <!--Div that will hold the pie chart-->
     <div id="chart_div"></div>
     <script src="./script.js"></script>
   </body>
 
->>>>>>>>> Temporary merge branch 2
+
 </html>
