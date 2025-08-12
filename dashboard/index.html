@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dashboard</title>
   <link rel="stylesheet" href="./estilo.css">
+  <link rel="stylesheet" href="../navbar/styles.css">
 
   <!--Load the AJAX API-->
-  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <!-- <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> -->
+ 
 
-  <script type="text/javascript">
+  <!-- <script type="text/javascript">
 
 
     // Load the Visualization API and the corechart package.
@@ -50,15 +52,28 @@
       var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
       chart.draw(data, options);
     }
-  </script>
+  </script> -->
 
 </head>
 
 <body>
-  <!--Div that will hold the pie chart-->
-  <div id="contenedor">
+  <div class="header">
+        <div class="logo">
+            <a href="../inicio/proyecto.html">
+                <img src="../navbar/img/logo.jpg" alt="Logo">
+            </a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+              <li><a href="../inicio/proyecto.html">Inicio</a></li>
+              <li><a href="../dashboard/index.html">Dashboard</a></li>
+              <li><a href="../calculadora/index.html">Calculadora</a></li>
+            </ul>
+        </nav>
+        
+      </div>
 
-
+  <!-- Div que contendrá a la Tabla -->
     <div id="tableau">
       <h1>Tabla de Energía</h1>
       <table id="tablaUsuarios">
@@ -81,19 +96,55 @@
       </table>
     </div>
 
-    <div id="grafico_torta">
-      <h1>Grafico de Torta</h1>
+      <!--Div que contendrá la tabla y los gráficos-->
+  <div id="contenedor">
+
+
+
+    <!-- Divs que contedrá a los gráficos -->
+    <div class="grafico_torta">
+      <h1>Gráfico de Torta</h1>
       <div id="chart_div">
       </div>
-
-
+      <canvas id="myChart"></canvas>
     </div>
+
+    <!-- <div class="grafico_torta2">
+      <h1>Grafico de Torta 2</h1>
+      <div id="chart_div">
+      </div> -->
+
+    <div class="estandar_tamano">
+      <h1>Gráfico de Área</h1>
+      <canvas id="myChart2"></canvas>
+    </div>
+
+    <div class="estandar_tamano">
+      <h1>Gráfico de Barras</h1>
+      <canvas id="myChart3"></canvas>
+    </div>
+
+    <div class="estandar_tamano">
+      <h1>Gráfico de Línea</h1>
+      <canvas id="myChart4"></canvas>
+    </div>
+
   </div>
+
+  <!-- Llamados de Js -->
   <script src="./script.js"></script>
-
-
+  <!-- Llamado de js de gráficos -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.6/dist/chart.umd.min.js"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> 
+ <!-- Grafico de torta -->
+  <script type="text/javascript" src="./js_graficos/Torta.js"></script>
+  <!-- Grafico de Area -->
+  <script type="text/javascript" src="./js_graficos/Area.js"></script>
+  <!-- Grafico de Barras -->
+  <script type="text/javascript" src="./js_graficos/Barra.js"></script>
+  <!-- Grafico de Lineas -->
+  <script type="text/javascript" src="./js_graficos/Linea.js"></script>
 
 
 </body>
-
 </html>

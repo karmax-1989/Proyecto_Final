@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="../navbar/styles.css">
+    <link rel="stylesheet" href="Estilo_medio_calculadora.css">
+    <script src="./script.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <a href="../inicio/proyecto.html">
+                <img src="../navbar/img/logo.jpg" alt="Logo">
+            </a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="../inicio/proyecto.html">Inicio</a></li>
+                <li><a href="../dashboard/index.html">Dashboard</a></li>
+                <li><a href="../calculadora/index.html">Calculadora</a></li>
+            </ul>
+        </nav>
+        
+    </div>
+    
+    <div id="secundario">
+    </div>
+    <main id="contenido">
+
+      <img src="../Recursos/Imagenes_calculadora/Plantas_tropicales.jpg" alt="" class="bordes">
+
+        
+        <form action="" id="formulario">
+
+          <h1>Calculadora</h1>
+          <p>
+            Conocer nuestra participación en el consumo, nos ayudará a concientizarnos acerca del impacto que
+            tenemos sobre nuestro medio al estar conectados a una fuente de energía, para ello, esta calculadora nos ayudará
+            a saber cuantos Twh consumimos a partir de un promedio mensual, este valor lo debes ingresar en kwh. 
+          </p>
+          
+
+           <img src="" alt="">
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">Kwh</span>
+                <input id="kwh" type="text" class="form-control" placeholder="Varlor de consumo en Kwh" aria-label="Username" aria-describedby="basic-addon1"
+                onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" min="1">
+              </div>
+            <button type="button" class="btn btn-success" onclick="resultado()">Calcular</button>
+
+        </form>
+
+      <img src="../Recursos/Imagenes_calculadora/Plantas_tropicales.jpg" alt="" class="bordes invertido">
+
+      <img src="../Recursos/Imagenes_calculadora/mural_plantas.jpg" alt="" id="inferior">
+    </main>
+
+    <!--Implementacion de libreria Sweetalert-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Fin implementacion de libreria Sweetalert-->
+
+</body>
+</html>
