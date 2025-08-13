@@ -147,5 +147,18 @@
         justify-content: center;
     }
 
+    #copyright{
+        font-size: 1.5rem;  
+    }
+
+    input{
+        width: 15rem;
+        height: 5rem;
+    }
+
+    .input-suscribete::placeholder {
+        font-size: 1.05rem; /* Tamaño deseado */
     
+    }
+
 }
