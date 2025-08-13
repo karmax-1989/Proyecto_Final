@@ -2,23 +2,23 @@ function grafico_Linea() {
 
     const ctx = document.getElementById('myChart2')
 
-    const labelst = ['Eólica', 'solar', 'Geotermica']
+    const labelst = ['Eólica', 'solar', 'Geotérmica']
 
     const titulos = year() // SE LLAMA EL ERRAGLO DE AÑOS GENERADO
 
     /*valores que se le da a cada linea */
-    const valoresSolar = [123, 524, 669, 332, 252, 665, 333, 996, 365, 145]
-    const valoresEolica = [147, 258, 366, 789, 456, 123, 753, 951, 624, 815]
-    const valoreshidrica = [748, 326, 951, 241, 896, 326, 582, 741, 151, 363]
+    const valoresSolar = [0, 0, 0, 0, 0, 0.005, 0.012, 0.132, 0.191, 0.317]
+    const valoresEolica = [0.055, 0.058, 0.070, 0.068, 0.051, 0.003, 0.043, 0.063, 0.010, 0.051]
+    const valoreshidrica = [1.476, 1.346, 1.729, 1.823, 1.994, 1.991, 2.119, 2.444, 2.821, 2.821]
 
     /*asigna color a cada punto de la linea */
-    const coloresSolar = '#ddcb03'
-    const coloesEolica = '#8e7f7f'
+    const coloresSolar = '#34c217ff'
+    const coloesEolica = '#eb0909ff'
     const coloresHidrica = '#4000ff'
 
     /*dibuja la linea de cada valor */
-    const bordesSolar = '#ddcb03'
-    const bordesEolica = '#8e7f7f'
+    const bordesSolar = '#34c217ff'
+    const bordesEolica = '#eb0909ff'
     const bordesHidrica = '#4000ff'
 
     const mychart = new Chart(ctx, {
@@ -78,7 +78,7 @@ function grafico_Linea() {
 
 function year() {
 
-    const limite = 2022
+    const limite = 2021
 
     let arr = []
 

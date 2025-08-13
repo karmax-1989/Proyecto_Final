@@ -10,15 +10,15 @@ function grafico_barra(){
     // toda la informacion para representar el grafico
     data: {
         // titulos de cada barra
-      labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+      labels: ['2016', '2017', '2018', '2019', '2020', '2021'],
       datasets: [{
 
-        label: '# of Votes',
+        label: 'Consumo de energía solar por año',
         // los datos segun los titulos establecidos
-        data: [12, 5, 3, 5, 2, 3],
+        data: [0, 0.005, 0.012, 0.0132, 0.191, 0.317],
         borderWidth: 3,
         backgroundColor:['#d41515ff','#1900fcff','#ffea04ff','#32f800ff', ' #6f10ebff','#eba610ff'],
-        borderColor: ['#000000ff'],
+        borderColor: ['#ffffffff'],
       }]
     },
 
