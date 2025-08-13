@@ -231,5 +231,8 @@ button:hover {
     .subtitulos{
         font-size: 2.5rem;
     }
+    .nav-list li{
+        padding-top: 1rem !important;
+    }
 
 }
