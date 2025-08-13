@@ -35,16 +35,16 @@
     transform: scale(1.1);
 }
 
-.navigator .nav-links{
+.navigator .nav-list{
     list-style: none;
 }
 
-.navigator .nav-links li{
+.navigator .nav-list li{
     display: inline-block;
     padding: 0 20px;
 }
 
-.navigator .nav-links a{
+.navigator .nav-list a{
     font-size: 700;
     color: #eceff1;
     text-decoration: none;
@@ -53,3 +53,78 @@
 }
 
 
+.abrir-menu,
+.cerrar-menu {
+    display: none;
+}
+
+
+@media screen and (max-width: 550px) {
+
+    body{
+        margin: auto;
+        padding: auto;
+    }
+
+    .abrir-menu,
+    .cerrar-menu {
+        display: block;
+        border: 0;
+        font-size: 1.25rem;
+        background-color: transparent;
+        cursor: pointer;
+        
+    }
+
+    .abrir-menu {
+        color: #1c1c1c;
+    }
+
+    .cerrar-menu {
+        color: #ececec;
+    }
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #185a1a;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+        height: 22rem;
+        margin-top: 1rem;
+        
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .nav-list {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        
+    }
+
+    .nav-list li a {
+        color: #ecececec; 
+    }
+
+    .navigator .nav-list a{
+        font-size: 2.5rem;
+    }
+
+    #cerrar{
+        margin-right: 3rem;
+    }
+
+}

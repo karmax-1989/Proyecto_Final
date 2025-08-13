@@ -17,31 +17,7 @@
     padding: 15px;
 }
 
-.header-footer .logo-footer img{
-    height: 55px;
-    width: auto;
-    margin-top: 9px;
-    transition: all 0.3s;
-    border-radius: 100%;
 
-}
-
-.header-footer .logo-footer{
-    cursor: pointer;
-    
-}
-
-.header-footer .logo-footer img:hover{
-    transform: scale(1.1);
-}
-
-.yt{
-    background-color: #9e0000;
-    border-radius: 50px;
-    color: rgb(255, 255, 255);
-    padding: 10px;
-    
-}
 
 .derechos{
     background-color: #012202;
@@ -62,14 +38,14 @@
 
 .karmaxcode-footer{
     display: flex;
-    justify-content: flex-end;
     padding-bottom: 20px;
+    padding-left: 20px;
 
 }
 
 .karmaxcode-footer img{
-    width: 90px;
-    height: 60px;
+    width: 260px;
+    height: 100px;
     padding-right: 15px;
     
     
@@ -77,16 +53,17 @@
 
 #text-footer{
     margin: 0;
-    padding-top: 7px;
+    padding-top: 25px;
     padding-right: 10px;
+    font-size: 1.5rem;
     
 }
 
 .section-footer{
     display: flex;
     justify-content: space-evenly;
-    gap: 40px;
-    padding: 15px;
+    gap: 40px !important;
+    padding: 15px !important;
 }
 
 .section-footer div{
@@ -99,8 +76,8 @@
     margin: 0;
 }
 
-#input-suscribete{
-    width: 100%;
+.input-suscribete{
+    width: 100% !important;
 }
 
 #copyright{
@@ -111,4 +88,83 @@
     max-width: 1000px;
     margin: 0 auto;
     line-height:40px;
+}
+
+#definition-footer{
+    text-align: justify;
+}
+
+@media screen and (max-width: 550px) {
+
+    body{
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    
+    .section-footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .enlaces-footer{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 2rem;
+    }
+
+    
+    .karmaxcode-footer img{
+        width: 14rem;
+        height: 6rem;
+    }
+
+    #text-footer{
+        margin: 0;
+        font-size: 2rem;
+        padding-top: 0;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    .enlaces-footer-a{
+        display: flex;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .enlaces-footer-a a{
+        font-size: 2.7rem;
+        padding-top: 1rem;
+    }
+
+    .a-footer{
+        padding: 0.5rem;
+        padding-top: 1.5rem;
+        font-size: 2rem;
+    }
+
+    .form-suscribete{
+        padding: 1rem;
+    }
+
+    .karmaxcode-footer{
+        display: flex;
+        justify-content: center;
+    }
+
+    #copyright{
+        font-size: 1.5rem;  
+    }
+
+    input{
+        width: 15rem;
+        height: 5rem;
+    }
+
+    .input-suscribete::placeholder {
+        font-size: 1.05rem; /* Tamaño deseado */
+    
+    }
+
 }
