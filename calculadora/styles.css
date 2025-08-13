@@ -166,4 +166,13 @@ footer button:hover {
     .nav-list li{
         padding-top: 1rem !important;
     }
+    main{
+        height: 70rem;
+    }
+    #basic-addon1{
+        font-size: 2rem;
+    }
+    #kwh{
+        margin: 1rem;
+    }
 }
