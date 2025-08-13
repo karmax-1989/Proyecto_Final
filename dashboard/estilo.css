@@ -57,7 +57,7 @@ th {
 
 tbody {
     /* Define la altura máxima del cuerpo de la tabla para 5 filas */
-    max-height: 200px; /* Ajusta este valor si tus filas son más altas o más bajas */
+    max-height: 230px; /* Ajusta este valor si tus filas son más altas o más bajas */
     overflow-y: auto; /* Habilita el scroll vertical */
     display: block; /* Importante para que overflow-y funcione */
 }
