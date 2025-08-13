@@ -20,16 +20,38 @@
           <img src="../navbar/img/logo.jpg" alt="Logo">
         </a>
       </div>
-      <nav>
-        <ul class="nav-links">
+
+
+
+
+      <button id="abrir" class="abrir-menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list"
+          viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+        </svg>
+      </button>
+      <nav class="nav" id="nav">
+        <button class="cerrar-menu" id="cerrar">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+          </svg>
+        </button>
+        <ul class="nav-list">
           <li><a href="../inicio/proyecto.html">Inicio</a></li>
           <li><a href="../dashboard/index.html">Dashboard</a></li>
-          <li><a href="../calculadora/index.html">Calculadora</a></li>
+          <li><a href="../calculadora/index.html">Calculadora</a>
+          </li>
         </ul>
       </nav>
 
-    </div>    
 
+
+
+
+    </div>
   </header>
 
   <div id="secundario">
@@ -73,40 +95,44 @@
 
 
   <footer class="pie">
-        <div class="section-footer">
-            <div>
-                <h2 id="definition-footer">
-                    La energía solar es una de las alternativas más sostenibles y beneficiosas para el planeta. Al ser
-                    una fuente de energía limpia y renovable, no produce emisiones de gases de efecto invernadero ni
-                    contaminantes. Su implemetación en hogares, industrias y comunidades promueve la autonomía energética y el desarrollo sostenible.
-                </h2>
-            </div>
-            <div>
-                <h2 class="enlaces-footer">Enlaces:</h2>
-                <a href="../inicio/proyecto.html">Inicio</a>
-                <a href="../dashboard/index.html">Dashboard</a>
-                <a href="../calculadora/index.html">Calculadora</a>
-            </div>
-            <div>
+    <div class="section-footer">
+      <div>
+        <h2 id="definition-footer">
+          La energía solar es una de las alternativas más sostenibles y beneficiosas para el planeta. Al ser
+          una fuente de energía limpia y renovable, no produce emisiones de gases de efecto invernadero ni
+          contaminantes. Su implemetación en hogares, industrias y comunidades promueve la autonomía energética y el
+          desarrollo sostenible.
+        </h2>
+      </div>
+      <div>
+        <h2 class="enlaces-footer">Enlaces:</h2>
+        <a href="../inicio/proyecto.html">Inicio</a>
+        <a href="../dashboard/index.html">Dashboard</a>
+        <a href="../calculadora/index.html">Calculadora</a>
+      </div>
+      <div>
 
-                <h2>Suscríbete:</h2>
-                <form action="">
-                    <input type="text" class="input-suscribete" placeholder="Ingrese su correo electrónico">
-                    <button type="submit">Suscríbete</button>
+        <h2>Suscríbete:</h2>
+        <form action="">
+          <input type="text" class="input-suscribete" placeholder="Ingrese su correo electrónico">
+          <button type="submit">Suscríbete</button>
 
-            </div>
-        </div>
-        <div class="karmaxcode-footer">
-            <p id="text-footer">by</p>
-            <img src="../footer/img/logo.jpg" alt="Logo">
-        </div>
-        <div class="derechos">
+      </div>
+    </div>
+    <div class="karmaxcode-footer">
+      <p id="text-footer">by</p>
+      <img src="../footer/img/logo.jpg" alt="Logo">
+    </div>
+    <div class="derechos">
 
-            <p id="copyright">Copyright©2025karmaxcode.All right reserved</p>
+      <p id="copyright">Copyright©2025karmaxcode.All right reserved</p>
 
-        </div>
+    </div>
 
-    </footer>
+  </footer>
+
+  <script src="../navbar/script.js"></script>
+  
 </body>
 
 </html>
