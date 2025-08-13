@@ -61,6 +61,11 @@
 
 @media screen and (max-width: 550px) {
 
+    body{
+        margin: auto;
+        padding: auto;
+    }
+
     .abrir-menu,
     .cerrar-menu {
         display: block;
@@ -111,4 +116,6 @@
     .nav-list li a {
         color: #ecececec;
     }
+
+
 }
