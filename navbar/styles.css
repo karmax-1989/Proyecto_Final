@@ -98,7 +98,7 @@
         background-color: #185a1a;
         padding: 2rem;
         box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
-        height: 60%;
+        height: 22rem;
         margin-top: 1rem;
         
     }
@@ -116,12 +116,15 @@
     }
 
     .nav-list li a {
-        color: #ecececec;  
+        color: #ecececec; 
     }
 
     .navigator .nav-list a{
-        font-size: 4rem;
+        font-size: 2.5rem;
+    }
 
-}
+    #cerrar{
+        margin-right: 3rem;
+    }
 
 }

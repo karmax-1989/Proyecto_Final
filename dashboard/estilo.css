@@ -249,3 +249,30 @@ button:hover {
     transform: scale(1.05);
 }
 
+@media screen and (max-width: 550px) {
+    p{
+        margin-left: 1rem;
+        margin-right: 1rem;
+        font-size: 2.5rem;
+    }
+
+    h1{
+        font-size: 2.5rem;
+    }
+    h2{
+        font-size: 2.5rem;
+    }
+    label {
+        font-size: 2.5rem;
+    }
+    button {
+        font-size: 2.5rem;
+    }
+    .subtitulos{
+        font-size: 2.5rem;
+    }
+    .nav-list li{
+        padding-top: 1.5rem !important;
+    }
+    
+}
