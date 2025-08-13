@@ -95,6 +95,11 @@
 }
 
 @media screen and (max-width: 550px) {
+
+    body{
+        margin: 0 !important;
+        padding: 0 !important;
+    }
     
     .section-footer{
         display: flex;
@@ -105,20 +110,21 @@
     .enlaces-footer{
         display: flex;
         justify-content: center;
-        padding-bottom: 4rem;
+        padding-bottom: 2rem;
     }
 
     
     .karmaxcode-footer img{
-        width: 16rem;
+        width: 14rem;
         height: 6rem;
     }
 
     #text-footer{
         margin: 0;
-        font-size: 1.5rem;
+        font-size: 2rem;
         padding-top: 0;
-
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
     }
 
     .enlaces-footer-a{
@@ -129,7 +135,17 @@
     .a-footer{
         padding: 0.5rem;
         padding-top: 1.5rem;
+        font-size: 2rem;
     }
 
+    .form-suscribete{
+        padding: 1rem;
+    }
 
+    .karmaxcode-footer{
+        display: flex;
+        justify-content: center;
+    }
+
+    
 }
